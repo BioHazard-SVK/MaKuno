@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+article {
+    padding: 140px;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.avatar {
+    float: right;
+    padding: 0;
+    border: 1px solid #9D8B7F;
+    box-shadow: 0 0 30px #9D8B7F;
+}
+
+
+body {
+    font-family: "Poppins";
+    background: #e9eaea;
+    margin: 0; 
+}
+
+body > main > header {
+    height: 120px;
+    width: 100%;
+    background: #9D8B7F;
+    color: antiquewhite;
+    display: flexbox;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;    
+}
+
+
+footer {
+    box-sizing: border-box;
+    padding: 50px 0 0 0;
+    text-align: center;
+    clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 105%, 0 105%);
+    background: #9D8B7F;
+}
+
+footer a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+h2 {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    color: #9D8B7F;
+    text-shadow: -2px -2px 1px white, 3px 3px 7px #9D8B7F;
+}
+
+html {
+    background: #9D8B7F;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 130px;
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(images/logo.png) no-repeat;
+    background-size: 90px 115px;
+}
+
+#logo > * {
+    margin: 0 0 0 100px;
+    text-shadow: -2px -2px 2px antiquewhite, 2px 2px 10px #111111;
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+    text-shadow: 2px 2px 5px #111111;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: antiquewhite;
+    text-shadow: 0 0 10px white;
+}
+
+nav ul a:hover, .active a {
+    border-bottom: 1px solid antiquewhite;
+}
+
+nav ul li {
+    margin: 10px 5px;
+    padding: 25px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px #111111;
+}
+
+#products a {
+    text-decoration: none;
+}
+
+#products img {
+    border: 3px solid rgb(0, 0, 0);
+    background: black;
+}
+
+
+section {
+    max-width: 60%;
+    margin: 0 auto;
+}
