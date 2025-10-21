@@ -10,19 +10,22 @@
     font-weight: bold;
 }
 
-html {
-    background: #9D8B7F;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
 }
 
+html {
+    background: #9D8B7F;
+}
 
 body {
     font-family: "Poppins";
     background: #e9eaea;
-    margin: 0; 
+    margin: 0;
+    padding-top: 130px; 
 }
-
-
 
 header {
     height: 130px;
@@ -30,7 +33,8 @@ header {
     background: #9D8B7F;
     color: antiquewhite;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: center;
     position: fixed;
     z-index: 1;
     top: 0;    
@@ -40,14 +44,30 @@ header {
     height: 120px;
     margin: 0 0 15px 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     background-size: 90px 115px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    text-shadow: 2px 2px 5px #111111;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 #logo > * {
-    margin: 0 0 0 100px;
-    text-shadow: -2px -2px 2px antiquewhite, 2px 2px 10px #111111;
+    margin: 20px 0 0 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-shadow:  -2px -2px 2px antiquewhite, 2px 2px 10px #111111,
+                    1px 1px black;
 }
 
 h1 span {
@@ -55,11 +75,13 @@ h1 span {
     text-transform: uppercase;
 }
 
-#logo small {
+.slogan {
     text-transform: uppercase;
     font-size: 0.85em;
     text-shadow: 2px 2px 5px #111111;
+    margin-top: 5px;
 }
+
 
 nav ul {
     margin: 0;
@@ -96,6 +118,21 @@ main {
     overflow: hidden;
 }
 
+h2 {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+    color: #9D8B7F;
+    text-shadow: -2px -2px 1px white, 3px 3px 7px #9D8B7F;
+}
+
+.avatar {
+    float: right;
+    padding: 0;
+    border: 1px solid #9D8B7F;
+    box-shadow: 0 0 30px #9D8B7F;
+}
+
 article {
     max-width: 60%;
     margin: 0 auto;
@@ -107,4 +144,67 @@ footer {
     text-align: center;
     clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 105%, 0 105%);
     background: #9D8B7F;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 40px;
+        margin: 15px;
+    }
+    
+    article {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+    
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    #logo {
+        margin: 10px;
+        height: auto;
+    }
+    
+    main {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    article {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    #logo > * {
+        margin: 0 0 0 50px;
+    }
+    
+    nav ul li {
+        font-size: 1em;
+        padding: 8px;
+    }
 }
