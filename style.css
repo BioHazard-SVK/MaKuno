@@ -33,7 +33,7 @@ header {
     background: #9D8B7F;
     color: antiquewhite;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 1;
@@ -41,7 +41,7 @@ header {
 }
 
 #logo {
-    height: 120px;
+    height: auto;
     margin: 0 0 15px 15px;
     display: flex;
     flex-direction: row;
@@ -64,6 +64,8 @@ header {
 }
 
 h1 {
+    font-weight: 700;
+    text-transform: capitalize;
     margin: 0;
     padding: 0;
     text-shadow:  -2px -2px 2px antiquewhite, 2px 2px 10px #111111,
@@ -113,8 +115,7 @@ nav ul li {
 }
 
 main {
-    padding: 140px;
-    margin: 30px;
+    padding-top: 50px;
     overflow: hidden;
 }
 
