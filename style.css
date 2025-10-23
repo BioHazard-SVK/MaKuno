@@ -116,27 +116,34 @@ nav ul li {
 
 main {
     padding-top: 50px;
+    max-width: 60%;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 h2 {
     max-width: 60%;
-    margin: 0 auto;
+    margin: 0;
     text-align: left;
     color: #9D8B7F;
     text-shadow: -2px -2px 1px white, 3px 3px 7px #9D8B7F;
 }
 
-.avatar {
-    float: right;
-    padding: 0;
-    border: 1px solid #9D8B7F;
-    box-shadow: 0 0 30px #9D8B7F;
+.subtitle {
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: 1em;
 }
 
-article {
-    max-width: 60%;
-    margin: 0 auto;
+.content-section.hidden {
+    display: none;
+}
+
+.avatar {
+    float: right;
+    margin: 0 0 40px 0;
+    border: 1px solid #9D8B7F;
+    box-shadow: 0 0 30px #9D8B7F;
 }
 
 footer {
