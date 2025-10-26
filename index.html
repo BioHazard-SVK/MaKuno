@@ -23,10 +23,10 @@
             </div>
             <nav role="navigation">
                 <ul>
-                    <li><a href="#aboutus" data-target="aboutus">O nás</a></li>
-                    <li><a href="#technology" data-target="technology">Technológia</a></li>
-                    <li><a href="#products" data-target="products">Naše&nbsp;Produkty</a></li>
-                    <li><a href="#contact" data-target="contact">Kontakt</a></li>
+                    <li><a href="#aboutus" data-target="aboutus-section">O nás</a></li>
+                    <li><a href="#technology" data-target="technology-section">Technológia</a></li>
+                    <li><a href="#products" data-target="products-section">Naše&nbsp;Produkty</a></li>
+                    <li><a href="#contact" data-target="contact-section">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,6 +41,7 @@
             </section>
             <section id="technology" class="content-section hidden">
                 <h2>Technológia</h2>
+                <p>PASS</p>
             </section>
             <section id="products" class="content-section hidden">
                 <h2>Naše produkty</h2>
@@ -48,10 +49,42 @@
             </section>
             <section id="contact" class="content-section hidden">
                 <h2>Kontakt</h2>
-            </section>
+    
+            <div class="contact-content">
+                <address class="contact-info">
+                    <p><strong>Martin Kunovič - Stolárstvo</strong></p>
+                    <p>Tel: <a href="tel:+42190XXXXXXXX">+421 90X XXX XXX</a></p>
+                    <p>Email: <a href="mailto:info@vasa-firma.sk">info@vasa-firma.sk</a></p>
+                    <p>Adresa: Príkladová ulica 123, 123 45 Mesto</p>
+                </address>
+
+                <form id="contact-form" class="contact-form">
+                    <h3>Napíšte nám</h3>
+                    <div class="form-group">
+                        <label for="name">Meno:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Správa:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submit-button">Odoslať správu</button>
+                    <p id="form-message" class="hidden"></p>
+                </form>
+            </div>
         </main>        
         <footer>
-            Created by Branislav Kollár 2025. All rights reserved.
+            Created by ©Branislav Kollár 2025. All rights reserved.
+            <address class="paragraph-button">
+                <a href="branislav.kollar.bb@gmail.com" class="contactus-button">Contact Us</a>
+            </address>
         </footer>        
     </body>
 </html>

@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Mapovanie navigačných kľúčov (data-target) na skutočné ID sekcií
     const idMap = {
-        'aboutus': 'aboutus',
-        'technology': 'technology',
-        'products': 'products',
-        'contact': 'contact',
+        'aboutus-section': 'aboutus',
+        'technology-section': 'technology',
+        'products-section': 'products',
+        'contact-section': 'contact',
     };
     
     // Konštanty pre elementy DOM
@@ -113,4 +113,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-}) ();
+});

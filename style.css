@@ -24,7 +24,7 @@ body {
     font-family: "Poppins";
     background: #e9eaea;
     margin: 0;
-    padding-top: 130px; 
+    padding-top: 130px;
 }
 
 header {
@@ -115,10 +115,11 @@ nav ul li {
 }
 
 main {
+    margin: 0 0 40px 0;
     padding-top: 50px;
     max-width: 60%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 h2 {
@@ -141,21 +142,95 @@ h2 {
 
 .avatar {
     float: right;
-    margin: 0 0 40px 0;
+    margin: 0 0 50px 0;
     border: 1px solid #9D8B7F;
     box-shadow: 0 0 30px #9D8B7F;
 }
 
+.contact-content {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-message {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.hidden {
+    display: none !important;
+}
+
 footer {
     box-sizing: border-box;
+    width: 100%;
     padding: 50px 0 0 0;
     text-align: center;
     clip-path: polygon(0 0, 50% 20%, 100% 0, 100% 105%, 0 105%);
     background: #9D8B7F;
 }
 
+footer address {
+    display: inline;
+}
+
+
+.contactus-button {
+    background-color: antiquewhite;
+    color: black;
+    text-decoration:  none;
+    padding: 3px;
+    border-radius: 15px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
+
+    body {
+        padding-top: 0;
+    }
+    header {
+        position: static;
+        
+    }
+
     main {
         padding: 40px;
         margin: 15px;
@@ -168,7 +243,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     body {
-        padding-top: 80px;
+        padding-top: 0px;
     }
     
     header {
@@ -204,7 +279,7 @@ footer {
 
 @media screen and (max-width: 480px) {
     body {
-        padding-top: 60px;
+        padding-top: 0px;
     }
     
     #logo > * {
