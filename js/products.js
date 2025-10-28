@@ -4,7 +4,7 @@ const productData = [
     {
         id: 1,
         full: "gallery/kuchyna_1.jpg", 
-        preview: "gallery/kuchyna_1_preview.png", 
+        preview: "gallery/kuchyna_.jpg", 
         alt: "Moderná kuchynská linka", 
         caption: "Kuchynská linka."
     },
