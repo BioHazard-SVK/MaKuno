@@ -14,7 +14,7 @@ const productData = [
         full: "gallery/kuchyna_2.jpg", 
         preview: "gallery/kuchyna_2_preview.png", 
         alt: "Kuchynaská linka  ", 
-        caption: "Kuchynská linka na mierum."
+        caption: "Kuchynská linka na mieru."
     },
 
     {
