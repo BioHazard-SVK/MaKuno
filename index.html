@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="wood, stairs, drevené schody, nábytok, masív" />
         <meta name="author" content="Branislav Kollár" />
-        <script defer src="js/index.js"></script>
+        <script defer src="js/products.js"></script>
+            <script defer src="js/index.js"></script>
         <link rel="shortcut icon" href="image/circular-saw.png"/>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         <title>Martin Kunovič - Stolárstvo </title>
@@ -45,45 +46,50 @@
             </section>
             <section id="products" class="content-section hidden">
                 <h2>Naše produkty</h2>
-                <p>Naše produkty sú z prvotriedneho, masívneho a kvalitného dreva.</p>
+                <p>Naše produkty sú z prvotriedneho, masívneho a kvalitného dreva.</p>                
+                <div id="gallery-container" class="product-gallery"></div>
             </section>
             <section id="contact" class="content-section hidden">
                 <h2>Kontakt</h2>
-    
+
             <div class="contact-content">
                 <address class="contact-info">
                     <p><strong>Martin Kunovič - Stolárstvo</strong></p>
                     <p>Tel: <a href="tel:+42190XXXXXXXX">+421 90X XXX XXX</a></p>
-                    <p>Email: <a href="mailto:info@vasa-firma.sk">info@vasa-firma.sk</a></p>
+                    <p>Email: <a href="mailto:nasa@firma.sk">nasa@firma.sk</a></p>
                     <p>Adresa: Príkladová ulica 123, 123 45 Mesto</p>
                 </address>
-
-                <form id="contact-form" class="contact-form">
-                    <h3>Napíšte nám</h3>
-                    <div class="form-group">
-                        <label for="name">Meno:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Správa:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" id="submit-button">Odoslať správu</button>
-                    <p id="form-message" class="hidden"></p>
-                </form>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746.7274232912634!2d18.796509286196084!3d49.48383878535079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471415000b721e9d%3A0x63115f017f148545!2sAutomatick%C3%BD%20extern%C3%BD%20defibril%C3%A1tor%20(AED)!5e1!3m2!1ssk!2ssk!4v1761499248059!5m2!1ssk!2ssk" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; max-width:100%;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </main>        
+            </section>
+        </main>
+        <div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                
+                <img id="lightbox-image" src="" alt="">
+                
+                <button id="lightbox-prev" class="lightbox-nav">&lt;</button>
+                <button id="lightbox-next" class="lightbox-nav">&gt;</button>
+                
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+                
+            </div>
+        </div>        
         <footer>
             Created by ©Branislav Kollár 2025. All rights reserved.
             <address class="paragraph-button">
-                <a href="branislav.kollar.bb@gmail.com" class="contactus-button">Contact Us</a>
+                <a href="mailto: branislav.kollar.bb@gmail.com" class="contactus-button">Contact Us</a>
             </address>
         </footer>        
     </body>
