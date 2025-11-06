@@ -172,6 +172,15 @@ h2 {
     display: none !important;
 }
 
+.tech {
+    justify-content: center;
+    
+    margin: 0 auto 0 auto;
+    border: 1px solid #9D8B7F;
+    box-shadow: 0 0 30px #9D8B7F;
+    max-width: 100%;
+}
+
 /* LIGHTBOX ZÁKLADY */
 .lightbox-overlay {
     position: fixed;

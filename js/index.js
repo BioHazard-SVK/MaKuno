@@ -9,8 +9,17 @@ let currentPhotoIndex = 0;
 // Konštanta sa musí definovať až v DOMContentLoaded, pretože element ešte nemusí existovať.
 let LIGHTBOX_OVERLAY; 
 
+// dočasná funkcia pre učely reklamného textu, pred nasadením webu odstrániť túto funkciu
+document.addEventListener("DOMContentLoaded", function() {
+    const paragraphs = document.querySelectorAll("p");
+    const temporaryText = "Tu môže byť Váš text.";
+
+    paragraphs.forEach(paragraph => {
+        paragraph.textContent = temporaryText;
+    });
+});
+
 function displayLightbox(index) {
-    // !!! OPRAVENÝ PREKLEP: productData.length
     if (index < 0 || index >= productData.length || !LIGHTBOX_OVERLAY) return;
 
     currentPhotoIndex = index;
